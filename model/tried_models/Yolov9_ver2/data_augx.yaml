@@ -1,0 +1,5 @@
+train: /home/sogaksa123/AIFFEL_THON/data/dataset2/data_rec/Training_augx/train/images
+val: /home/sogaksa123/AIFFEL_THON/data/dataset2/data_rec/Training_augx/val/images
+
+nc: 3
+names: ["crackles", "wheezes", "Normal"]

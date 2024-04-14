@@ -1,0 +1,5 @@
+train: /home/sogaksa123/AIFFEL_THON/model/Yolov9_ver3/Training/data/train/images/
+val: /home/sogaksa123/AIFFEL_THON/model/Yolov9_ver3/Training/data/val/images
+
+nc: 3
+names: ["crackles", "wheezes", "normal"]

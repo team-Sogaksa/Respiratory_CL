@@ -1,15 +1,11 @@
 data관련 소스 업로드
 
+
+
+# [ICBHI 2017 Challenge](https://bhichallenge.med.auth.gr/)
+
+## Respiratory Sound Database
 ---
-
-
-# ICBHI 2017 Challenge
-
-https://bhichallenge.med.auth.gr/
-
-# Respiratory Sound Database
----
-
 
 The Respiratory Sound database was originally compiled to support the scientific challenge organized at Int. Conf. on Biomedical Health Informatics - ICBHI 2017. The current version of this database is made freely available for research and contains both the public and the private dataset of the ICBHI challenge.
 

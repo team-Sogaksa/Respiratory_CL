@@ -1,7 +1,7 @@
 
 
 <h1 align="center"> <br>소깎사 </h1>
-<h3 align="center"> 🥨 Team bAIkery 🥨</h3>
+<h3 align="center"> 
 <h5 align="center"> 조혜원 | 장태욱 | 옥창우 | 이승제 </h5>
 <h5 align="center">
 모두의 연구소 AIFFEL X 스마트사운드<br>

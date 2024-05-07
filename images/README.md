@@ -6,8 +6,11 @@
 
 ## EDA
 
-  <img width="300" alt="image" src="images/breath.png">
-  <img width="300" alt="image" src="images/classes.png">
-  <img width="300" alt="image" src="images/diseases.png">
-  <img width="300" alt="image" src="images/quartile.png">
-  
+  <img width="300" alt="image" src="diseases.png">
+  <img width="300" alt="image" src="classes.png">
+  <img width="300" alt="image" src="breath.png">
+  <img width="300" alt="image" src="quartile.png">
+
+## Validation
+
+  <img width="300" alt="image" src="">

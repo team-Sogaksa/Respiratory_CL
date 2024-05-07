@@ -75,7 +75,7 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 
 <br>
 
-## 2. Preprocessing
+## 2. EDA & Preprocessing
 
 - sampling(8000Hz)
 - 5th Butterworth filter: RespireNet 참고
@@ -91,8 +91,11 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 -->
 <!-- preprocessed image -->
 
-- ouliers 처리
-
+- ouliers 처리: audio를 7초로 자르면서 생긴 문제들 처리
+  1. 호흡 시작이 7초 이후인 데이터 -> 호흡 이전 데이터 제거
+  2. 호흡 주기가 7초 이상인 데이터 -> annotation 정보 처리 시 width 재설정
+  3. 마지막 호흡 이후 7초 이상 어노테이션이 없는 데이터 -> 호흡 이후 데이터 제거
+  4. 7초 기준으로 데이터를 잘랐을 때 양 끝 1초 이하인 데이터 -> bbox의 width가 0이 되서 오류발생 -> 해당 bbox label정보 제거 
 
 <br>
 

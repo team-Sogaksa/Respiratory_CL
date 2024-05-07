@@ -37,15 +37,14 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
   저희 조는 이런 이상 호흡들의 조기진단과 실시간 모니터링, 효율적 치료를 목적으로 하고자 [ICBHI 2017 Challenge Respiratory Sound Database](https://bhichallenge.med.auth.gr/ICBHI_2017_Challenge)를 이용해 객체 탐지 모델 구축 및 평가를 진행하였습니다. 
 - 과정: EDA > 전처리 > bbox 추출 > 모델링 > 결과 확인
 
-
+<!--
 ## About Aiffelthon
 **<평가 방식>** 
 
  
 - 다양한 모델 적용 후,  데이터에 대한 결과 비교
 - 과업 : 수포음(crackle)과 천명음(wheeze) 확인과 호흡 개수 확인.
-
-
+-->
 
 ## 1. Dataset 
 
@@ -61,15 +60,16 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 - `wheeze` - High-pitched, **100 -2500Hz**의 주파수 대역과 **80msec 이상의 지속시간**
 - `crackle` - High-pitched, crackle의 **지속시간**은 **20 ms보다 더 낮고** 주파수 대역은 **100와 200 Hz** 사이
 -->
-- `crackle`: 기포가 작은 공기 통로를 통과하면서 만들어내는 딱딱거리는 소리
-- `wheeze`: 좁아진 통로를 공기가 지나가면서 내는 휘파람같은 소리
-  |lung sound: |Normal|Crackle|Wheeze|
-  |---|---|---|---|
-  |frequency|50-2500 Hz|100-200 Hz|100-2500 Hz|
-  |duration||< 20 ms|> 80ms|
-
-  > reference: [Analysis of Respiratory Sounds: State of the Art](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2990233/)
-  > (소리의 특징은 질환, 환자의 상태 등 상황에 따라 충분히 달라질 수 있음)
+>- `crackle`: 기포가 작은 공기 통로를 통과하면서 만들어내는 딱딱거리는 소리
+>- `wheeze`: 좁아진 통로를 공기가 지나가면서 내는 휘파람같은 소리
+>
+>  |lung sound: |Normal|Crackle|Wheeze|
+>  |---|---|---|---|
+>  |frequency|50-2500 Hz|100-200 Hz|100-2500 Hz|
+>  |duration||< 20 ms|> 80ms|
+>
+>  reference: [Analysis of Respiratory Sounds: State of the Art](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2990233/)
+>  (소리의 특징은 질환, 환자의 상태 등 상황에 따라 충분히 달라질 수 있음)
 
 <br>
 
@@ -81,35 +81,36 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 
 <!--<img width="392" alt="image" src="">-->
 <!-- preprocessed image -->
-<img width="392" alt="image" src="images/readme_img/splitimg.png">
+<div align="center">
+  <img width="800" alt="image" src="images/readme_img/splitimg.png">
+</div>
 
 <br>
 
-## 3. Labeling and Feature extraction
+## 3. Labeling & Feature extraction
 - Mel feature extraction: spectrogram parameters는 [RespireNet](https://github.com/microsoft/RespireNet/blob/main/utils.py)을 참고, 이후 실험적으로 표현 좋은 해상도로 각 값들을 결정
-
-- Bounding box 좌표값 결정: annotation정보를 통해, 
-    - width는 호흡 주기, 
-    - height는 [Analysis of Respiratory Sounds: State of the Art](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2990233/)를 참고하여 해당 표현이 나타날 수 있는 값으로 결정
-    - 비교를 위한 두 가지 데이터셋 : 1. class마다 다른 `y`값 / 2. 모든 class가 같은 `y`값
-    <img width="392" alt="image" src="images/readme_img/parameters.png">
-
+- Bounding box 좌표값 결정: annotation정보를 통해, `width`는 호흡 주기, `height`는 [Analysis of Respiratory Sounds: State of the Art](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2990233/)를 참고하여 해당 표현이 나타날 수 있는 값으로 결정
+- 비교를 위해 두 가지 조건 설정 : 1. class마다 다른 `y`값 / 2. 모든 class가 같은 `y`값
+  
+  <img width="392" alt="image" src="images/readme_img/parameters.png">
+      
 - 결정된 bbox값으로 xml 데이터 생성
 
-- sample:
-<img width="300" alt="image" src="images/readme_img/labelingsample.png"><br>
-<img width="400" alt="image" src="images/readme_img/labelingsample1.png">
-<img width="400" alt="image" src="images/readme_img/labelingsample2.png">
+  <img width="400" alt="image" src="images/readme_img/labelingsample1.png">
+  <img width="400" alt="image" src="images/readme_img/labelingsample2.png">
+  <img width="300" alt="image" src="images/readme_img/labelingsample.png">
 
 
 <br>
 
 ## 4. 모델링(COCO-pretrained)
 - [Faster RCNN]() [Torchvision](https://pytorch.org/vision/main/models/faster_rcnn.html)
-  <img width="600" alt="image" src="images/readme_img/fasterrcnnmodel.png">
+  
+  <img width="800" alt="image" src="images/readme_img/fasterrcnnmodel.png">
 
 - [YOLO v8]() [Ultralytics](https://docs.ultralytics.com/)
-  <img width="600" alt="image" src="images/readme_img/yolov8model.png">
+
+  <img width="800" alt="image" src="images/readme_img/yolov8model.png">
 
 <br>
 
@@ -122,10 +123,12 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 -->
 
 - 조건에 따른 mAP값 비교
-<img width="600" alt="image" src="images/readme_img/result.png">
+  
+  <img width="600" alt="image" src="images/readme_img/result.png">
 
-- YOLOv8 model sample inference  
-<img width="600" alt="image" src="images/readme_img/testsample.png">
+- YOLOv8 model sample inference
+  
+  <img width="600" alt="image" src="images/readme_img/testsample.png">
 
 
 

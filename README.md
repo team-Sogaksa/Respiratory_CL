@@ -116,6 +116,8 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
   <img width="300" alt="image" src="images/readme_img/labelingsample.png">
 
 
+
+
 <br>
 
 ## 4. Modeling, Training
@@ -131,6 +133,20 @@ Using COCO-pretrained models
 - [YOLO v8]() ([Ultralytics](https://docs.ultralytics.com/))
 
   <img width="800" alt="image" src="images/readme_img/yolov8model.png">
+
+
+
+#### YOLOv8 validation result 
+
+- labels
+  
+  <img width="600" alt="image" src="images/val_batch2_labels.jpg">
+
+- pred
+
+  <img width="600" alt="image" src="images/val_batch2_pred.jpg">
+  
+
 
 <br>
 
@@ -151,16 +167,7 @@ Using COCO-pretrained models
   <img width="600" alt="image" src="images/readme_img/testsample.png">
 
 
-### YOLOv8 validation result 
 
-- labels
-  
-  <img width="600" alt="image" src="images/val_batch2_labels.jpg">
-
-- pred
-
-  <img width="600" alt="image" src="images/val_batch2_pred.jpg">
-  
 
 
 

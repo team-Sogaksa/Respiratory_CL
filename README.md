@@ -35,7 +35,7 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
   호흡음은 공기의 흐름, 폐 내부의 조직 변화, 폐 내 분비물의 위치와 직접적인 관련이 있어 호흡기 건강 및 호흡기 질환의 중요 지표로 사용됩니다.<br>
   증상의 위험성으로는 이러한 호흡들이 폐질환과 관련이 있으며 삶의 질, 건강의 문제로 이어 질 수 있습니다.<br>
   저희 조는 이런 이상 호흡들의 조기진단과 실시간 모니터링, 효율적 치료를 목적으로 하고자 [ICBHI 2017 Challenge Respiratory Sound Database](https://bhichallenge.med.auth.gr/ICBHI_2017_Challenge)를 이용해 객체 탐지 모델 구축 및 평가를 진행하였습니다. 
-- 과정: EDA > 전처리 > bbox 추출 > 모델링 > 결과 확인
+- 과정: EDA > preprocessing > features extraction > modeling > 결과 확인
 
 <!--
 ## About Aiffelthon
@@ -90,6 +90,9 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 </div>
 -->
 <!-- preprocessed image -->
+
+- ouliers 처리
+
 
 <br>
 

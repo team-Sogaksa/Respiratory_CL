@@ -1,12 +1,13 @@
 
 
-<h1 align="center"> <br>소리를 깎는 사람들 </h1>
+<h1 align="center"> <br>청진음을 이용한 Abnormal Lung Sounds Object Detection </h1>
 <h3 align="center"> 팀 소깎사 </h3>
 <h5 align="center"> 조혜원 | 장태욱 | 옥창우 | 이승제 </h5>
 <h5 align="center">
 모두의 연구소 AIFFEL X 스마트사운드<br>
+<!--
 청진음을 이용한 Abnormal Lung Sound(crackles, wheezes) Object Detection<br>
-  
+-->
 
 </h5>
 <br>

@@ -109,7 +109,9 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 
 <br>
 
-## 4. 모델링(COCO-pretrained)
+## 4. Modeling, Training
+
+모델링(COCO-pretrained)
 
 - [Faster RCNN]() [Torchvision](https://pytorch.org/vision/main/models/faster_rcnn.html)
   
@@ -138,7 +140,16 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
   <img width="600" alt="image" src="images/readme_img/testsample.png">
 
 
+### YOLOv8 validation image sample
 
+- labels
+  
+  <img width="600" alt="image" src="images/val_batch2_labels.jpg">
+
+- pred
+
+  <img width="600" alt="image" src="images/val_batch2_pred.jpg">
+  
 
 
 

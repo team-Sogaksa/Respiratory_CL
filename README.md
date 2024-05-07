@@ -173,7 +173,7 @@ Using COCO-pretrained models
 ## 6. 결론 및 회고
 
 - Audio/sound domain을 기반으로 한 프로젝트는 처음이였으므로 audio data에 대한 전반적인 이해와 다양한 pre-processing 방법을 시도해 보는 것을 목표로 하였습니다.
-- `YOLOv8` 모델과 `Faster RCNN`<!--, SSD--> 모델을 비교 후, `YOLOv8`로 다양한 파라미터 조합의 데이터 셋에 대하여 실험, 평가를 진행하였습니다. <!--다양한 augmentation과 여러가지 데이터셋으로 평가를 시도해 보았습니다.
+- `YOLOv8` 모델과 `Faster RCNN`<!--, SSD--> 모델을 비교 후, `YOLOv8`로 다양한 파라미터 조합의 데이터 셋에 대하여 실험, 평가를 진행하였습니다. <!--다양한 augmentation과 여러가지 데이터셋으로 평가를 시도해 보았습니다.-->
 - 첫번째 과업인, 비정상음에 대한 object detection은 다음 조건에서 가장 높은 성능을 보였습니다. 
     - noise filtering (5th bandpass filter),
     - bbox height 1500Hz로 통일,

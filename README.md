@@ -82,6 +82,7 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 - split audio length: 7seconds 
 - zero padding: audio segments length under 7s
 
+
   <img width="800" alt="image" src="images/readme_img/splitimg.png">
   
 <!--

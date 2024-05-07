@@ -24,7 +24,6 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 
 </div>
 
----
 
 ## Description
 
@@ -46,6 +45,8 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 - 과업 : 수포음(crackle)과 천명음(wheeze) 확인과 호흡 개수 확인.
 -->
 
+---
+
 ## 1. Dataset 
 
 - 데이터셋: [ICBHI 2017 Challenge Respiratory Sound Database](https://bhichallenge.med.auth.gr/ICBHI_2017_Challenge) 
@@ -54,40 +55,45 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 - 6898개의 호흡 주기를 포함해 총 5.5시간 분량의 녹음 기록
 - 1864개에는 수포음(crackle), 886개에는 천명음(wheeze), 506개에는 수포음(crackle) 와 천명음(wheeze) 이 모두 포함되어 있음.
 - 데이터에는 깨끗한 호흡음만을 포함한 녹음 파일과 실제 생활 조건을 반영해 소음이 포함된 녹음 파일이 있음. 
-- 환자는 모든 연령대를 포함
+- 환자는 모든 연령대를 포함<br><br>
+  > `crackle`: 기포가 작은 공기 통로를 통과하면서 만들어내는 딱딱거리는 소리<br>
+  > `wheeze`: 좁아진 통로를 공기가 지나가면서 내는 휘파람같은 소리
+  >
+  >  |lung sound: |Normal|Crackle|Wheeze|
+  >  |---|---|---|---|
+  >  |frequency|50-2500 Hz|100-200 Hz|100-2500 Hz|
+  >  |duration||< 20 ms|> 80ms|
+  >
+  >  reference: [Analysis of Respiratory Sounds: State of the Art](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2990233/)
+  >  (소리의 특징은 질환, 환자의 상태 등 상황에 따라 충분히 달라질 수 있음)
 
 <!--
 - `wheeze` - High-pitched, **100 -2500Hz**의 주파수 대역과 **80msec 이상의 지속시간**
 - `crackle` - High-pitched, crackle의 **지속시간**은 **20 ms보다 더 낮고** 주파수 대역은 **100와 200 Hz** 사이
 -->
->- `crackle`: 기포가 작은 공기 통로를 통과하면서 만들어내는 딱딱거리는 소리
->- `wheeze`: 좁아진 통로를 공기가 지나가면서 내는 휘파람같은 소리
->
->  |lung sound: |Normal|Crackle|Wheeze|
->  |---|---|---|---|
->  |frequency|50-2500 Hz|100-200 Hz|100-2500 Hz|
->  |duration||< 20 ms|> 80ms|
->
->  reference: [Analysis of Respiratory Sounds: State of the Art](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2990233/)
->  (소리의 특징은 질환, 환자의 상태 등 상황에 따라 충분히 달라질 수 있음)
 
 <br>
 
 ## 2. Preprocessing
+
 - sampling(8000Hz)
 - 5th Butterworth filter: RespireNet 참고
 - split audio length: 7seconds 
 - zero padding: audio segments length under 7s
 
-<!--<img width="392" alt="image" src="">-->
-<!-- preprocessed image -->
-<div align="center">
   <img width="800" alt="image" src="images/readme_img/splitimg.png">
+  
+<!--
+<div align="center">
+  <img width="392" alt="image" src="">
 </div>
+-->
+<!-- preprocessed image -->
 
 <br>
 
 ## 3. Labeling & Feature extraction
+
 - Mel feature extraction: spectrogram parameters는 [RespireNet](https://github.com/microsoft/RespireNet/blob/main/utils.py)을 참고, 이후 실험적으로 표현 좋은 해상도로 각 값들을 결정
 - Bounding box 좌표값 결정: annotation정보를 통해, `width`는 호흡 주기, `height`는 [Analysis of Respiratory Sounds: State of the Art](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2990233/)를 참고하여 해당 표현이 나타날 수 있는 값으로 결정
 - 비교를 위해 두 가지 조건 설정 : 1. class마다 다른 `y`값 / 2. 모든 class가 같은 `y`값
@@ -104,6 +110,7 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 <br>
 
 ## 4. 모델링(COCO-pretrained)
+
 - [Faster RCNN]() [Torchvision](https://pytorch.org/vision/main/models/faster_rcnn.html)
   
   <img width="800" alt="image" src="images/readme_img/fasterrcnnmodel.png">
@@ -165,6 +172,7 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
         
 
 ## 7. References
+
 - [Analysis of Respiratory Sounds: State of the Art](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2990233/)
 - [RespireNet: A Deep Neural Network for Accurately Detecting Abnormal Lung Sounds in Limited Data Setting](https://arxiv.org/abs/2011.00196)
 - [RespireNet github](https://github.com/microsoft/RespireNet?tab=readme-ov-file)

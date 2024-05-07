@@ -102,8 +102,8 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
       
 - 결정된 bbox값으로 xml 데이터 생성
 
-  <img width="400" alt="image" src="images/readme_img/labelingsample1.png">
-  <img width="400" alt="image" src="images/readme_img/labelingsample2.png">
+  <img width="300" alt="image" src="images/readme_img/labelingsample1.png">
+  <img width="300" alt="image" src="images/readme_img/labelingsample2.png">
   <img width="300" alt="image" src="images/readme_img/labelingsample.png">
 
 

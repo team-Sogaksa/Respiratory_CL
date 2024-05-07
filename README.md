@@ -115,13 +115,15 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 
 ## 4. Modeling, Training
 
-모델링(COCO-pretrained)
+Using COCO-pretrained models
+> `epochs`: 100 <br>
+> `batch_size`: 16
 
-- [Faster RCNN]() [Torchvision](https://pytorch.org/vision/main/models/faster_rcnn.html)
+- [Faster RCNN]() ([Torchvision](https://pytorch.org/vision/main/models/faster_rcnn.html))
   
   <img width="800" alt="image" src="images/readme_img/fasterrcnnmodel.png">
 
-- [YOLO v8]() [Ultralytics](https://docs.ultralytics.com/)
+- [YOLO v8]() ([Ultralytics](https://docs.ultralytics.com/))
 
   <img width="800" alt="image" src="images/readme_img/yolov8model.png">
 

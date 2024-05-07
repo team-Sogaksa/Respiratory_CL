@@ -6,11 +6,18 @@
 
 ## EDA
 
-  <img width="300" alt="image" src="diseases.png">
-  <img width="300" alt="image" src="classes.png">
-  <img width="300" alt="image" src="breath.png">
-  <img width="300" alt="image" src="quartile.png">
+  <img width="400" alt="image" src="diseases.png">
+  <img width="400" alt="image" src="classes.png">
+  <img width="400" alt="image" src="breath.png">
+  <img width="400" alt="image" src="quartile.png">
 
-## Validation
+## Validation(YOLOv8)
 
-  <img width="300" alt="image" src="">
+- lebels
+  
+  <img width="800" alt="image" src="">
+  
+- pred
+  
+  <img width="800" alt="image" src="">
+  

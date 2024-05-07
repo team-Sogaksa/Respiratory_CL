@@ -123,7 +123,7 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 
 <br>
 
-## 5. 결과 확인 
+## 5. Result
 <!--
 1) Task 1 : crackle wheeze object detection 
 <p align="center"><img width="392" alt="" src=""></p>
@@ -140,7 +140,7 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
   <img width="600" alt="image" src="images/readme_img/testsample.png">
 
 
-### YOLOv8 validation image sample
+### YOLOv8 validation result 
 
 - labels
   
@@ -159,7 +159,7 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 -->
 
  
-## 6. 결 론
+## 6. 결론 및 회고
 
 - Audio/sound domain을 기반으로 한 프로젝트는 처음이였으므로 audio data에 대한 전반적인 이해와 다양한 pre-processing 방법을 시도해 보는 것을 목표로 하였습니다.
 - `YOLOv8` 모델과 `Faster RCNN`<!--, SSD--> 모델을 비교 후, `YOLOv8`로 다양한 파라미터 조합의 데이터 셋에 대하여 실험, 평가를 진행하였습니다. <!--다양한 augmentation과 여러가지 데이터셋으로 평가를 시도해 보았습니다.

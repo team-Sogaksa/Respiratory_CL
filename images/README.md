@@ -1,9 +1,5 @@
 이미지 파일 업로드
 
-- eda 결과 images
-- train/test result
-
-
 ## EDA
 
   <img width="400" alt="image" src="diseases.png">
@@ -15,9 +11,9 @@
 
 - lebels
   
-  <img width="800" alt="image" src="">
+  <img width="800" alt="image" src="val_batch2_labels.jpg">
   
 - pred
   
-  <img width="800" alt="image" src="">
+  <img width="800" alt="image" src="val_batch2_pred.jpg">
   

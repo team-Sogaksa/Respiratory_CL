@@ -1,6 +1,6 @@
 
 
-<h1 align="center"> <br>소깎사 </h1>
+<h1 align="center"> <br>소리를 깎는 사람들 </h1>
 <h3 align="center"> 팀 소깎사 </h3>
 <h5 align="center"> 조혜원 | 장태욱 | 옥창우 | 이승제 </h5>
 <h5 align="center">
@@ -187,6 +187,7 @@ https://youtu.be/ct-0Zc4Qdw0?si=k-j_Om-AjDPqpmao
 - [Analysis of Respiratory Sounds: State of the Art](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2990233/)
 - [RespireNet: A Deep Neural Network for Accurately Detecting Abnormal Lung Sounds in Limited Data Setting](https://arxiv.org/abs/2011.00196)
 - [RespireNet github](https://github.com/microsoft/RespireNet?tab=readme-ov-file)
+- [Ultralytics YOLOv8 Docs](https://docs.ultralytics.com/)
 
 
 <br>
